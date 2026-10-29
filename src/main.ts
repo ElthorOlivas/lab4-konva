@@ -82,7 +82,12 @@ class App implements ScreenSwitcher {
 
 			case "result":
 				// Show results with the final score
-				this.resultsController.showResults(screen.score);
+				// 👉 TASK 5: Uncomment below to use LocalStorage version
+                // this.resultsController.showResults(screen.score);
+
+                // 👉 TASK 6: Uncomment below to use Express Server version
+                this.resultsController.showResultsFromServer(screen.score);
+                break;
 				break;
 		}
 	}
